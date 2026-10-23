@@ -1,0 +1,23 @@
+body{margin:0;background:#F6F2E9}
+a{color:#1E3328}a:hover{color:#8E5225}
+*{box-sizing:border-box}
+.ph{background-color:#D9D2C3;background-image:repeating-linear-gradient(135deg,rgba(30,51,40,.06) 0 2px,transparent 2px 14px)}
+.ph-dark{background-color:#2A4235;background-image:repeating-linear-gradient(135deg,rgba(246,242,233,.05) 0 2px,transparent 2px 16px)}
+.lift{transition:transform .35s ease,box-shadow .35s ease}
+.lift:hover{transform:translateY(-4px);box-shadow:0 22px 40px -22px rgba(30,51,40,.45)}
+input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #B9773F;outline-offset:2px}
+details summary::-webkit-details-marker{display:none}
+details[open] .chev{transform:rotate(45deg)}
+@media (prefers-reduced-motion:reduce){.lift,.lift:hover{transition:none;transform:none}}
+@media (max-width:760px){.hide-sm{display:none !important}.hero-title{font-size:46px !important}.h2{font-size:36px !important}}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:#1E3328;color:#F6F2E9;padding:10px 16px;border-radius:6px;font-weight:700}
+.skip-link:focus{top:12px;color:#F6F2E9}
+.pill[aria-pressed="true"]{background:#1E3328 !important;color:#F6F2E9 !important;border-color:#1E3328 !important;font-weight:700 !important}
+.err{color:#A1261B;font-weight:600;font-size:13px;min-height:0}
+.err:empty{display:none}
+input[aria-invalid="true"]{border-color:#A1261B !important}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:reduce){video[autoplay]{display:none}}
+@media (max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-auto-rows:170px !important}}
+@media (max-width:760px){header{position:static !important}nav[aria-label="Main"]{order:3;width:100%;flex-wrap:nowrap !important;overflow-x:auto;gap:4px 20px !important;-webkit-overflow-scrolling:touch}nav[aria-label="Main"] a{white-space:nowrap}}
